@@ -33,6 +33,7 @@ function Navbar() {
 
       <nav className={`nav-links ${menuOpen ? "nav-open" : ""}`}>
         <NavLink to="/" end onClick={handleNav}>Home</NavLink>
+        <NavLink to="/about" onClick={handleNav}>About</NavLink>
         <NavLink to="/plants" onClick={handleNav}>Plants</NavLink>
         <NavLink to="/contact" onClick={handleNav}>Contact</NavLink>
 
