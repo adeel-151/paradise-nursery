@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 
 function Navbar() {
   const cartItems = useSelector(state => state.cart.items);
-  
+
   const totalItems = cartItems.reduce(
     (total, item) => total + item.quantity,
     0
@@ -14,17 +14,15 @@ function Navbar() {
       <Link to="/" className="logo">
         Paradise<span>Nursery</span>
       </Link>
-      
+
       <nav className="nav-links">
-        <NavLink to="/">Home</NavLink>
+        <NavLink to="/" end>Home</NavLink>
         <NavLink to="/plants">Plants</NavLink>
-        
+
         <NavLink to="/cart" className="cart-link">
-          <span className="cart-icon">🛒</span>
+          <span>🛒</span>
           <span>Cart</span>
-          <span className="cart-count">
-            {totalItems}
-          </span>
+          <span className="cart-count">{totalItems}</span>
         </NavLink>
       </nav>
     </header>
