@@ -82,7 +82,7 @@ button {
       rgba(8, 32, 24, 0.85),
       rgba(8, 32, 24, 0.45)
     ),
-    url("/images/hero-plants.jpg");
+    url("https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?q=80&w=1200");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
