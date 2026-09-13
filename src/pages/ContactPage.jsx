@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 function ContactPage() {
   const [formData, setFormData] = useState({
@@ -43,8 +45,10 @@ function ContactPage() {
   ];
 
   return (
-    <main className="contact-page">
-      {/* ── Header ──────────────────────── */}
+    <>
+      <Navbar />
+      <main className="contact-page">
+        {/* ── Header ──────────────────────── */}
       <section className="contact-hero">
         <span className="eyebrow">Get in Touch</span>
         <h1>We'd Love to Hear From You</h1>
@@ -174,6 +178,8 @@ function ContactPage() {
         </section>
       </div>
     </main>
+    <Footer />
+    </>
   );
 }
 

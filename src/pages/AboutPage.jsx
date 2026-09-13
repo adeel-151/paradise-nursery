@@ -1,9 +1,13 @@
 import React from "react";
 import AboutUs from "../components/AboutUs";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 function AboutPage() {
   return (
-    <main className="about-page">
+    <>
+      <Navbar />
+      <main className="about-page">
       {/* ── Hero ──────────────────────── */}
       <section className="about-hero">
         <div className="hero-content">
@@ -70,6 +74,8 @@ function AboutPage() {
         </div>
       </section>
     </main>
+    <Footer />
+    </>
   );
 }
 
