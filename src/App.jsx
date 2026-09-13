@@ -1,5 +1,6 @@
 import { Routes, Route, Link } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import ProductList from "./pages/ProductList";
 import CartPage from "./pages/CartPage";
@@ -23,9 +24,7 @@ function App() {
           }
         />
       </Routes>
-      <footer className="footer">
-        <p>&copy; {new Date().getFullYear()} Paradise Nursery. All rights reserved.</p>
-      </footer>
+      <Footer />
     </>
   );
 }

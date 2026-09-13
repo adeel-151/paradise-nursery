@@ -1,11 +1,15 @@
+import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../features/cart/CartSlice";
 
 function ProductCard({ product, isAdded }) {
   const dispatch = useDispatch();
+  const [showToast, setShowToast] = useState(false);
 
   const handleAddToCart = () => {
     dispatch(addToCart(product));
+    setShowToast(true);
+    setTimeout(() => setShowToast(false), 3000);
   };
 
   return (
@@ -40,6 +44,15 @@ function ProductCard({ product, isAdded }) {
           </button>
         </div>
       </div>
+
+      {showToast && (
+        <div className="toast-container">
+          <div className="toast">
+            <div className="toast-icon">✓</div>
+            <p>{product.name} added to cart!</p>
+          </div>
+        </div>
+      )}
     </article>
   );
 }
