@@ -18,6 +18,7 @@ function Navbar() {
       <nav className="nav-links">
         <NavLink to="/" end>Home</NavLink>
         <NavLink to="/plants">Plants</NavLink>
+        <NavLink to="/contact">Contact</NavLink>
 
         <NavLink to="/cart" className="cart-link">
           <span>🛒</span>

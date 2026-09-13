@@ -27,7 +27,7 @@ function Footer() {
           <Link to="/">Home</Link>
           <Link to="/plants">Shop Plants</Link>
           <Link to="/cart">Shopping Cart</Link>
-          <a href="#">New Arrivals</a>
+          <Link to="/contact">Contact Us</Link>
         </div>
 
         <div className="footer-column">
