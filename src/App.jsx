@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import ProductList from "./pages/ProductList";
 import CartItem from "./pages/CartItem";
 import ContactPage from "./pages/ContactPage";
-import AboutPage from "./pages/AboutPage";
+import AboutPage from "./pages/AboutUs";
 import "./App.css";
 
 const LandingPage = () => (
