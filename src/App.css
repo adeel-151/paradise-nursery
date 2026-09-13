@@ -1468,7 +1468,7 @@ button { font: inherit; cursor: pointer; }
   .nav-links {
     position: fixed;
     top: 0;
-    right: 0;
+    right: -300px;
     width: 300px;
     height: 100vh;
     flex-direction: column;
@@ -1477,13 +1477,13 @@ button { font: inherit; cursor: pointer; }
     padding: 90px 28px 40px;
     background: var(--white);
     box-shadow: -10px 0 40px rgba(0, 0, 0, 0.08);
-    transform: translateX(100%);
+    transform: translateX(0);
     transition: transform 0.4s var(--ease);
     z-index: 250;
     overflow-y: auto;
   }
   .nav-links.nav-open {
-    transform: translateX(0);
+    transform: translateX(-300px);
   }
   .nav-links a {
     padding: 16px 20px !important;
