@@ -1,0 +1,33 @@
+import { Routes, Route, Link } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import ProductList from "./pages/ProductList";
+import CartPage from "./pages/CartPage";
+import "./App.css";
+
+function App() {
+  return (
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/plants" element={<ProductList />} />
+        <Route path="/cart" element={<CartPage />} />
+        <Route
+          path="*"
+          element={
+            <div className="not-found">
+              <h1>Page Not Found</h1>
+              <Link to="/">Return Home</Link>
+            </div>
+          }
+        />
+      </Routes>
+      <footer className="footer">
+        <p>&copy; {new Date().getFullYear()} Paradise Nursery. All rights reserved.</p>
+      </footer>
+    </>
+  );
+}
+
+export default App;
